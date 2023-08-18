@@ -19,7 +19,7 @@ input[type="text"] {
 button {
   padding: 10px;
   border: solid 1px #605DC8;
-  background: #605DC8;
+  background: default_gray_900;
   color: white;
   border-radius: 8px;
 }
