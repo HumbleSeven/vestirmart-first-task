@@ -1,0 +1,54 @@
+.topbar,
+.navbar {
+  background: #111827;
+}
+
+.topbar {
+  height: 42px;
+  border-bottom: 0.1px solid white;
+}
+
+.middlebar {
+  height: 70px;
+}
+
+.menubar {
+  background-color: white;
+
+}
+
+.menubar .nav-link {
+  color: black;
+}
+
+.nav-link,
+.navbar-brand {
+  color: white;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+}
+.onlyTab{
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+
+  .topbar,
+  .menubar,
+  .allIcons, .onlyTab {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+  .topbar,
+  .menubar,
+  .allIcons {
+    display: none;
+  }
+  .onlyTab{
+    display: block;
+  }
+}

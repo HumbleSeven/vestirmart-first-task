@@ -264,56 +264,56 @@ $default_rose_50: #fff1f2;
   font-weight: 400;
   line-height: 32px;
 }
-@mixin text-3xl{
+@mixin text-3xl {
   font-family: Inter;
-font-size: 30px;
-font-style: normal;
-font-weight: 400;
-line-height: 36px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
 }
 
-@mixin text-4xl{
+@mixin text-4xl {
   font-family: Inter;
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: 40px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
 }
-@mixin text-5xl{
+@mixin text-5xl {
   font-family: Inter;
-font-size: 48px;
-font-style: normal;
-font-weight: 400;
-line-height: 48px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
 }
-@mixin text-6xl{
+@mixin text-6xl {
   font-family: Inter;
-font-size: 60px;
-font-style: normal;
-font-weight: 400;
-line-height: 60px;
-}
-
-@mixin text-7xl{
-  font-family: Inter;
-font-size: 60px;
-font-style: normal;
-font-weight: 400;
-line-height: 60px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
 }
 
-@mixin text-8xl{
+@mixin text-7xl {
   font-family: Inter;
-font-size: 60px;
-font-style: normal;
-font-weight: 400;
-line-height: 60px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
 }
 
-@mixin text-9xl{
+@mixin text-8xl {
   font-family: Inter;
-font-size: 60px;
-font-style: normal;
-font-weight: 400;
-line-height: 60px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+@mixin text-9xl {
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
 }
