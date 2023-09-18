@@ -1,0 +1,46 @@
+.times {
+  padding-left: 0em;
+}
+
+.card {
+  border: none;
+}
+
+.myCard {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+}
+
+.myCard {
+  margin: 1.5em auto;
+}
+
+.myBox {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 5em 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .deals {
+    /* text-align: end; */
+    margin: 0em;
+    padding: 0em;
+  }
+
+  .times {
+    padding-left: 0rem;
+  }
+
+  .allDeals {
+    display: none;
+  }
+
+
+}

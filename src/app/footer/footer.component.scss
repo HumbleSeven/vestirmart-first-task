@@ -1,0 +1,49 @@
+@import "../../styles/base.scss";
+
+footer {
+  background-color: $default_gray_900;
+  color: white;
+}
+.vertical-line {
+  border-left: 1px solid #fff; /* Adjust the color and width as needed */
+  height: 110px; /* Adjust the height as needed */
+}
+.locationDetails{
+  font-size: 12px;
+}
+.footerInput {
+  flex: 1; /* Take up remaining space in the row */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0px 0px 4px;
+}
+.footerBtn {
+  padding: 8px;
+  color: white;
+  border: none;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+}
+
+a {
+  padding: 0.5em 0em;
+  font-size: 14px;
+  // text-align: end;
+  color: $default_gray_400;
+}
+.copyRight{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+@media screen and (max-width: 768px) {
+  .copyRight{
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    padding-top: 1em;
+  }
+  .copyRight p{
+   padding-top: 0.5em;
+  }
+}

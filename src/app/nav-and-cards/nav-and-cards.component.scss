@@ -1,0 +1,21 @@
+@import "../../styles/base.scss";
+.card {
+  border: none;
+}
+.nav-underline {
+  border-bottom: 2px solid #ccc;
+}
+.nav-link {
+  color: $default_gray_500;
+}
+.nav-link.active {
+  color: $default_gray_700;
+  border-bottom-color: red;
+}
+.horizontal-tab {
+  width: 100%; /* Set the width to 100% or your desired width */
+  overflow-x: auto; /* Enable horizontal scrolling when the content overflows the container */
+  // white-space: nowrap;
+}
+
+

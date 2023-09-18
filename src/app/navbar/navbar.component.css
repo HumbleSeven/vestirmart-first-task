@@ -27,28 +27,39 @@
   text-align: center;
   padding: 0.2rem 0.5rem;
 }
-.onlyTab{
+
+.onlyTab {
   display: none;
 }
 
-@media screen and (max-width:767px) {
+/* Mobile */
+@media only screen and (max-width:768px) {
 
   .topbar,
   .menubar,
-  .allIcons, .onlyTab {
+  .allIcons,
+  .onlyTab {
     display: none;
   }
 
 }
 
-@media screen and (min-width: 767px) and (max-width: 1023px) {
+/* Tablet */
+@media only screen and  (min-width:769px) and (max-width: 1000px){
 
   .topbar,
   .menubar,
   .allIcons {
     display: none;
   }
-  .onlyTab{
+
+  .onlyTab {
+    display: block;
+  }
+}
+
+@media only screen and (min-width:1001px) {
+   .topbar{
     display: block;
   }
 }

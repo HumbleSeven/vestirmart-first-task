@@ -1,0 +1,54 @@
+@import "../../styles/base.scss";
+
+.carousel {
+  background-image: linear-gradient(90deg, #0d0411 30%, rgba(17, 24, 39, 0) 70%), url("../../assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 617px;
+  /* background: linear-gradient; */
+}
+.all-text {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 10em 0em 0em 1em;
+}
+.hero-subtitle,
+.hero-title,
+.hero-text {
+  color: #fff;
+}
+.hero-title {
+  @include text-lg;
+}
+.hero-subtitle {
+  @include text-7xl;
+  font-weight: 100;
+}
+.hero-text {
+  @include text-5xl;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .carousel {
+    background-image: linear-gradient(356deg, #0d0411 13.29%, rgba(17, 24, 39, 0) 98.36%), url("../../assets/hero.jpg");
+    background-size: cover;
+  }
+  .hero-title {
+    @include text-base;
+  }
+  .hero-subtitle {
+    @include text-3xl;
+  }
+  .hero-text {
+    @include text-5xl;
+  }
+  .all-text {
+    gap: 20px;
+    padding: 20em 0em 0em 1em;
+    // padding-left: 1em;
+  }
+}

@@ -1,0 +1,48 @@
+<section class="mt-5">
+  <div class="d-flex flex-column flex-sm-row justify-content-sm-between mx-3">
+    <h3 class="align-self-center align-self-sm-none">Recently Viewed</h3>
+    <!-- <div class="d-flex flex-column flex-lg-row deals">
+      <div
+        class="d-flex align-items-center justify-content-center text-danger text-center px-lg-5"
+      >
+        <h3>34<sub>days</sub></h3>
+        <h3>34<sub>hrs</sub></h3>
+        <h3>34<sub>mins</sub></h3>
+        <h3>34<sub>secs</sub></h3>
+      </div>
+    </div> -->
+    <button class="viewMoreDesktop btn btn-danger text-white text-bold">
+      View More
+    </button>
+  </div>
+
+  <div class="row mt-3">
+    <div
+      class="col-xs-12 col-sm-6 col-lg-3 card"
+      *ngFor="let eachDeal of recentlyViewed"
+    >
+      <img
+        [src]="eachDeal.imgUrl"
+        class="card-img-top"
+        style="width: 100%; height: 300px; margin: 0em 0.5em"
+        alt="..."
+      />
+      <div class="card-body">
+        <p class="card-text">{{ eachDeal.productCategory }}</p>
+        <h6 class="card-title">{{ eachDeal.productName }}</h6>
+        <div class="d-flex">
+          <p class="card-text text-decoration-line-through">
+            {{ eachDeal.oldPrice }}
+          </p>
+          <p class="card-text text-danger">
+            <strong>{{ eachDeal.newPrice }}</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 viewMore">
+      <button class="btn btn-danger text-white">View More</button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+.card {
+  border: none;
+}
+
+.viewMoreDesktop {
+  display: block;
+}
+
+.viewMore {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .viewMore {
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .viewMoreDesktop {
+    display: none;
+  }
+}

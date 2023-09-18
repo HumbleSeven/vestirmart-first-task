@@ -1,0 +1,20 @@
+@import "../../styles/base.scss";
+
+.featureTitle {
+  color: $default_gray_800;
+  font-weight: 500;
+  // @include text-base;
+}
+.featureContent {
+  @include text-sm;
+  color: $default_gray_500;
+}
+.content {
+  padding: 1em 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    padding: 1em 1.5em;
+  }
+}
