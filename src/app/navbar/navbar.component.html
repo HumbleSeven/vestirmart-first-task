@@ -21,9 +21,18 @@
 
 <nav class="navbar middlebar">
   <div class="container-fluid">
-    <a class="navbar-brand fs-1 fw-bold">OX</a>
+    <div class="d-flex">
+      <fa-icon
+        style="color: white"
+        [icon]="['fas', 'bars']"
+        size="2x"
+        class="my-2 mx-2"
+      ></fa-icon>
 
-    <form class="d-flex" role="search">
+      <a class="navbar-brand fs-1 fw-bold">OX</a>
+    </div>
+
+    <form class="d-none d-md-flex" role="search">
       <input
         class="form-control me-2"
         type="search"
@@ -32,16 +41,26 @@
       />
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
-    <fa-icon style="color: white" [icon]="['fas', 'bars']" size="2x" class="onlyTab"></fa-icon>
+
+    <!-- <fa-icon
+      style="color: white"
+      [icon]="['fas', 'bars']"
+      size="2x"
+      class="mobileBars"
+    ></fa-icon> -->
 
     <ul class="nav allIcons">
-      <li class="nav-item">
+      <li class="nav-item d-sm-block d-none">
         <a class="nav-link" href="#"
-          ><fa-icon style="color: white" [icon]="['fas', 'user']"></fa-icon
-        >
-      </a>
+          ><fa-icon
+            style="color: white"
+            [icon]="['fas', 'search']"
+            class=" "
+          ></fa-icon>
+        </a>
       </li>
-      <li class="nav-item">
+
+      <li class="nav-item d-none d-md-block">
         <a class="nav-link" href="#"
           ><fa-icon style="color: white" [icon]="['fas', 'repeat']"></fa-icon
         ></a>
@@ -56,6 +75,11 @@
           ><fa-icon style="color: white" [icon]="['fas', 'cart-plus']"></fa-icon
         ></a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"
+          ><fa-icon style="color: white" [icon]="['fas', 'user']"></fa-icon>
+        </a>
+      </li>
     </ul>
   </div>
 </nav>
@@ -65,7 +89,11 @@
     <ul class="nav d-flex">
       <li class="nav-item">
         <div class="d-flex align-items-center px-2 bg-danger">
-          <fa-icon style="color: white" [icon]="['fas', 'bars']" size="1x"></fa-icon>
+          <fa-icon
+            style="color: white"
+            [icon]="['fas', 'bars']"
+            size="1x"
+          ></fa-icon>
           <a class="nav-link text-white" href="#"
             >All Departments
             <fa-icon
@@ -76,19 +104,19 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" routerLink="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Shop</a>
+        <a class="nav-link" routerLink="/shop">Shop</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Featured</a>
+        <a class="nav-link" routerLink="/featured">Featured</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" routerLink="/about">About Us</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
+        <a class="nav-link" routerLink="/blog">Blog</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Promotion</a>

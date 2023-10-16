@@ -28,7 +28,7 @@
   padding: 0.2rem 0.5rem;
 }
 
-.onlyTab {
+.mobileBars {
   display: none;
 }
 
@@ -36,10 +36,12 @@
 @media only screen and (max-width:768px) {
 
   .topbar,
-  .menubar,
-  .allIcons,
-  .onlyTab {
+  .menubar
+   {
     display: none;
+  }
+  .mobileBars, .allIcons{
+    display: flex;
   }
 
 }
@@ -53,7 +55,7 @@
     display: none;
   }
 
-  .onlyTab {
+  .mobileBars {
     display: block;
   }
 }
